@@ -1,7 +1,6 @@
 let toggleBtn = document.querySelector('#toggleBtn');
 let sideNav = document.querySelector('#sideNav');
 
-// Toggle Side Nav
 toggleBtn.addEventListener('click', () => {
   if (toggleBtn.classList.contains('fa-align-justify')) {
     toggleBtn.classList.replace('fa-align-justify', 'fa-xmark');
