@@ -309,7 +309,6 @@ async function showCategoryDetails(index) {
     return;
   }
 
-  // Fetch all meal details in parallel
   const categoryMeals = await Promise.all(
     data.meals.map(async mealItem => {
       const res = await fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealItem.idMeal}`);
